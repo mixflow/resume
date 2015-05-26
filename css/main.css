@@ -1,0 +1,38 @@
+/* for wide screen which's browser width >= 800px*/
+@media screen and (min-width:800px), print{
+
+	header .two-columns .left {
+		width: 40%;
+	}
+	
+	.two-columns{
+		/* same height */
+	   	overflow: auto;
+	   	height: auto !important;
+	}
+	.two-columns .left, .two-columns .right{
+		width: 50%;
+		float: left;
+	}
+
+	header {
+		margin-top: 5%;
+	}
+
+	body {
+		margin: 0 auto; /* center the content */
+		max-width: 1200px; 
+	}
+}
+
+/*
+	the sytle when the page is printed.
+*/
+@media print{
+
+	/* hide "show more detail "*/
+	.detail-link {
+		display: none;
+	}
+
+}
