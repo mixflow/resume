@@ -1,38 +1,61 @@
+@charset "UTF-8";
+a {
+  text-decoration: none; }
+  a:link {
+    color: #000; }
+  a:hover {
+    color: #3D9BE3; }
+  a:visited {
+    color: #000; }
+  a:active {
+    color: #000; }
+
+/* header part with personal information*/
+header {
+  margin-top: 5%; }
+  header h1 {
+    color: #3D9BE3;
+    font-size: 3em;
+    margin: 0.2em 0 0; }
+  header .profession {
+    margin: 0 0 1.2em; }
+  header .contact p {
+    margin: 0.5 0 0.5em; }
+
+body {
+  margin: 0 auto;
+  /* center the content */
+  max-width: 1000px;
+  font-family: "瀹嬩綋", Calibri,sans-serif; }
+
+.content .category h2 {
+  color: #3D9BE3;
+  margin-top: 2em;
+  margin-bottom: .1em; }
+.content hr {
+  border: 1px dotted #9D9E9F;
+  border-style: none none dotted;
+  margin-top: .1em; }
+
 /* for wide screen which's browser width >= 800px*/
-@media screen and (min-width:800px), print{
+@media screen and (min-width: 800px), print {
+  /* two cols in wide screen and one col in narrow screen*/
+  .two-columns {
+    /* same height */
+    overflow: auto;
+    height: auto !important; }
 
-	header .two-columns .left {
-		width: 40%;
-	}
-	
-	.two-columns{
-		/* same height */
-	   	overflow: auto;
-	   	height: auto !important;
-	}
-	.two-columns .left, .two-columns .right{
-		width: 50%;
-		float: left;
-	}
+  .two-columns .left, .two-columns .right {
+    width: 50%;
+    float: left; }
 
-	header {
-		margin-top: 5%;
-	}
-
-	body {
-		margin: 0 auto; /* center the content */
-		max-width: 1200px; 
-	}
-}
-
+  /* header .two-columns .left {
+  	width: 40%;
+  } */ }
 /*
 	the sytle when the page is printed.
 */
-@media print{
-
-	/* hide "show more detail "*/
-	.detail-link {
-		display: none;
-	}
-
-}
+@media print {
+  /* hide "show more detail "*/
+  .detail-link {
+    display: none; } }

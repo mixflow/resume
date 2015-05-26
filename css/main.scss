@@ -1,0 +1,94 @@
+$sky-blue : #3D9BE3;
+$grey: #9D9E9F;
+
+$highlight: $sky-blue;
+$normal: #000;
+
+
+a {
+	text-decoration: none;
+	
+	$link-normal-color: #000;
+	&:link   {color: $link-normal-color}
+	&:hover  {color: $sky-blue}
+	&:visited{color: $link-normal-color}
+	&:active {color: $link-normal-color}
+}
+
+/* header part with personal information*/
+header {
+	margin-top: 5%;
+
+	h1 {
+		color: $highlight;
+		font-size: 3em;
+		margin: 0.2em 0 0;
+	}
+
+	.profession {
+		margin: 0 0 1.2em;
+	}
+
+	.contact{
+
+		p{
+			margin: 0.5 0 0.5em;
+		}
+	}
+}
+
+body {
+	margin: 0 auto; /* center the content */
+	max-width: 1000px; 
+
+	font-family: "宋体", Calibri,sans-serif;
+}
+
+
+.content {
+	.category h2 {
+		color: $highlight;
+
+		margin-top: 2em;
+		margin-bottom: .1em;
+	}
+
+	hr {
+		border: 1px dotted $grey;
+		border-style: none none dotted; 
+
+		margin-top: .1em;
+	}
+}
+
+/* for wide screen which's browser width >= 800px*/
+@media screen and (min-width:800px), print{
+	
+	/* two cols in wide screen and one col in narrow screen*/
+	.two-columns{
+		/* same height */
+	   	overflow: auto;
+	   	height: auto !important;
+	}
+	.two-columns .left, .two-columns .right{
+		width: 50%;
+		float: left;
+	}
+
+	/* header .two-columns .left {
+		width: 40%;
+	} */	
+
+}
+
+/*
+	the sytle when the page is printed.
+*/
+@media print{
+
+	/* hide "show more detail "*/
+	.detail-link {
+		display: none;
+	}
+
+}
