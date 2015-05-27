@@ -30,18 +30,52 @@
 		</div>
 		
 		<div class="category skill">
-			<h2>Skill</h2><hr>
-			<div class="two-columns">
-				<div class="left">
-					<h3>Web</h3>
-					<p>HTML <span class="total">cur</span></p>
-					<p>Javascript</p>
-					<p>CSS</p>
-				</div>
+		    <h2>Skill</h2>
+		    <hr>
+		    <div class="two-columns">
+		        <div class="left">
+		            <h3>Web</h3>
+		            <dl>
+		            	<!-- transform percentage value(eg. 50%) to line bar 
+		            		through javascript (resume.js) 
+		            	-->
+						<dt>HTML, CSS</dt><dd>70%</dd> 
+						<dt>Javascript, JQuery</dt><dd>75%</dd>
+						<dt>HTML5</dt><dd>65%</dd>
+						<dt>SCSS</dt><dd>70%</dd>
+					</dl>
+					<h3>Python</h3>
+					<dl>
+						<dt>Python</dt><dd>70%</dd>
+						<dt>Flask, Flask-sqlalchemy</dt><dd>55%</dd>
+						<dt>SQLAlchemy</dt><dd>45%</dd>
+						<dt>Django</dt><dd>35%</dd>
+					</dl>
+					<h3>Java</h3>
+					<dl>
+						<dt>Java</dt><dd>80%</dd>
+						<dt>Springmvc, Hibernate</dt><dd>70%</dd>
+						<dt>Spring, Struts2</dt><dd>65%</dd>
+					</dl>
+				</div> <!-- left end -->
+
 				<div class="right">
+					<h3>Datebase & Cache</h3>
+					<dl>
+						<dt>Postgresql</dt><dd>70%</dd>
+						<dt>Mysql</dt><dd>65%</dd>
+						<dt>Oracle, Sqlite3</dt><dd>50%</dd>
+						<dt>Redis</dt><dd>50%</dd>
+					</dl>
+
 					<h3>General & Other</h3>
-					<p>Git</p>
-					<p>Solr</p>
+					<dl>
+						<dt>Octave(Matlab)</dt><dd>65%</dd>
+						<dt>Machine Learning</dt><dd>40%</dd>
+						<dt>Apache, Tomcat</dt><dd>50%</dd>
+						<dt>Git, SVN</dt><dd>70%</dd>
+						<dt>Solr</dt><dd>60%</dd>
+					</dl>
 				</div>
 			</div>
 		</div>
@@ -52,7 +86,7 @@
 			<ul>
 				<li>
 					<p><b>Project name</b>, description description description description description description description description description description</p>
-					<p>+展开工作细节</p>
+					<p class="detail-link">+展开工作细节</p>
 					<ol>
 						<li>My task 1</li>
 						<li>My task 2</li>
@@ -60,7 +94,7 @@
 				</li>
 				<li>
 					<p><b>Another project name</b>, description description description description description description description description description description</p>
-					<p>+show detail</p>
+					<p class="detail-link">+show detail</p>
 					<ol>
 						<li>My task 1</li>
 						<li>My task 2</li>
@@ -90,7 +124,7 @@
 
 		<div class="category project">
 			<h2>Personal project</h2><hr>
-			<h3>Only HTML5 Video Player <span class="detail-link"><a>show detail</a></span></h3>
+			<h3>Only HTML5 Video Player</h3> <span class="detail-link"><a>show detail</a></span>
 			<p>This is a pure javascript and css library.</p>
 		</div>
 
@@ -104,5 +138,10 @@
 
 		<div class="category habit"></div>
 	</div>
+
+	<div class="popup project">
+		TODO
+	</div>
+	<script type="text/javascript" src="./js/resume.js"></script>
 </body>
 </html>

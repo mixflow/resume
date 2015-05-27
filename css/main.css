@@ -1,4 +1,11 @@
 @charset "UTF-8";
+body {
+  margin: 0 9.6%;
+  /* center the content */
+  max-width: 1200px;
+  font-size: 1em;
+  font-family: Calibri, "宋体", sans-serif; }
+
 a {
   text-decoration: none; }
   a:link {
@@ -22,20 +29,51 @@ header {
   header .contact p {
     margin: 0.5 0 0.5em; }
 
-body {
-  margin: 0 auto;
-  /* center the content */
-  max-width: 1000px;
-  font-family: "瀹嬩綋", Calibri,sans-serif; }
-
 .content .category h2 {
+  font-size: 1.2em;
   color: #3D9BE3;
+  text-transform: uppercase;
   margin-top: 2em;
   margin-bottom: .1em; }
 .content hr {
   border: 1px dotted #9D9E9F;
   border-style: none none dotted;
   margin-top: .1em; }
+.content h3 {
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: .7em 0 .1em; }
+.content .category.skill dl {
+  font-size: 1em;
+  margin: .1em 0 .1em; }
+.content .category.skill dt {
+  display: inline-block;
+  margin: .4em auto 0; }
+.content .category.skill dd {
+  display: inline-block;
+  width: 100%;
+  margin: .2em auto 0;
+  position: relative;
+  vertical-align: middle;
+  height: 0.4em;
+  background-color: #E4E4E4; }
+  .content .category.skill dd .current {
+    position: absolute;
+    display: inline-block;
+    height: 0.4em;
+    background-color: #3D9BE3; }
+
+.popup {
+  z-index: 50; }
+
+.popup.project {
+  display: none;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%; }
+  .popup.project.show {
+    display: block; }
 
 /* for wide screen which's browser width >= 800px*/
 @media screen and (min-width: 800px), print {
@@ -49,13 +87,23 @@ body {
     width: 50%;
     float: left; }
 
-  /* header .two-columns .left {
-  	width: 40%;
-  } */ }
+  header .two-columns .left {
+    width: 60%; }
+  header .two-columns .right {
+    width: 40%; }
+
+  .content .category.skill dt {
+    width: 40%; }
+  .content .category.skill dd {
+    width: 50%;
+    margin: 0; } }
 /*
 	the sytle when the page is printed.
 */
 @media print {
+  body {
+    margin: 0 4.8%; }
+
   /* hide "show more detail "*/
   .detail-link {
     display: none; } }
