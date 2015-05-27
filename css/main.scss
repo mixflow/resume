@@ -2,6 +2,7 @@
 
 $sky-blue : #3D9BE3;
 $grey: #9D9E9F;
+$light-grey: #E4E4E4;
 
 $highlight: $sky-blue;
 $normal: #000;
@@ -9,7 +10,7 @@ $normal: #000;
 $normal-font-size: 1em;
 
 body {
-	margin: 0 9.55%; /* center the content */
+	margin: 0 9.6%; /* center the content */
 	max-width: 1200px; 
 
 	font-size: $normal-font-size;
@@ -76,10 +77,39 @@ header {
 	}
 
 	.category.skill {
-		p {
+		dl {
 			font-size: $normal-font-size;
 
 			margin: .1em 0 .1em;
+		}
+
+
+		dt {
+			display: inline-block;
+			margin: .4em auto 0;
+
+		}
+		dd {
+			display: inline-block;
+			width: 100%;
+			margin: .2em auto 0;
+			
+			//float: right;
+			position: relative;
+			vertical-align: middle;
+
+			height: 0.4 * $normal-font-size; 
+			
+			background-color: $light-grey;
+		
+			.current {
+				position: absolute;
+				display: inline-block;
+
+				height: 0.4 * $normal-font-size; 
+				background-color: $highlight;
+
+			}
 		}
 	}
 }
@@ -105,6 +135,21 @@ header {
 		.right {
 			width: 40%
 		} 
+	}
+
+	.content{
+
+		.category.skill{
+			dt {
+				width: 40%;
+			}
+
+			dd {
+				width: 50%;
+				margin: 0;
+			}
+		}
+
 	}
 
 }
