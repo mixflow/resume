@@ -14,6 +14,8 @@
 		bar.innerHTML = "";
 		bar.appendChild(cur); // append the bar 
 
+		bar.setAttribute("title", percentage); //  add title desc
+
 	}
 	
 })();
