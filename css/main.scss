@@ -118,12 +118,17 @@ header {
 
 	.category.project {
 		h3 {
-			display: inline;
+			display: inline-block;
 		}
 
 		p {
 			margin: .6em 0 1em;
 			line-height: 150%;
+		}
+
+		a {
+
+			font-size: $normal-font-size * 0.85;
 		}
 
 		.detail-link {
@@ -133,7 +138,6 @@ header {
 
 			white-space: nowrap;
 			
-			font-size: $normal-font-size * 0.8;
 		}
 	}
 

@@ -64,16 +64,17 @@ header {
     height: 0.4em;
     background-color: #3D9BE3; }
 .content .category.project h3 {
-  display: inline; }
+  display: inline-block; }
 .content .category.project p {
   margin: .6em 0 1em;
   line-height: 150%; }
+.content .category.project a {
+  font-size: 0.85em; }
 .content .category.project .detail-link {
   margin-left: 1em;
   padding: 0 0.5em;
   border: 1px dotted;
-  white-space: nowrap;
-  font-size: 0.8em; }
+  white-space: nowrap; }
 
 .popup {
   z-index: 50; }
