@@ -4,7 +4,8 @@
 
 	for(var idx=0; idx < bars.length; idx+=1){
 		var bar = bars[idx];
-		var percentage = bar.innerHTML || "0%" // get percentage value
+		var val = isFinite(bar.innerHTML)? parseFloat(bar.innerHTML): 0; // get percentage value
+		var percentage = (val * 100).toFixed(2) + "%";
 
 		var cur = document.createElement("span");
 		cur.className = "current";
