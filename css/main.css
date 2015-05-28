@@ -33,6 +33,7 @@ header {
   font-size: 1.2em;
   color: #3D9BE3;
   text-transform: uppercase;
+  letter-spacing: .05em;
   margin-top: 2em;
   margin-bottom: .1em; }
 .content hr {
@@ -62,6 +63,17 @@ header {
     display: inline-block;
     height: 0.4em;
     background-color: #3D9BE3; }
+.content .category.project h3 {
+  display: inline; }
+.content .category.project p {
+  margin: .6em 0 1em;
+  line-height: 150%; }
+.content .category.project .detail-link {
+  margin-left: 1em;
+  padding: 0 0.5em;
+  border: 1px dotted;
+  white-space: nowrap;
+  font-size: 0.8em; }
 
 .popup {
   z-index: 50; }
