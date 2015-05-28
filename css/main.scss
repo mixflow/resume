@@ -22,11 +22,11 @@ a {
 	text-decoration: none;
 	
 	$link-normal-color: #000;
-	
+
 	&:link   {color: $link-normal-color}
-	&:hover  {color: $sky-blue}
 	&:visited{color: $link-normal-color}
 	&:active {color: $link-normal-color}
+	&:hover  {color: $sky-blue}
 }
 
 

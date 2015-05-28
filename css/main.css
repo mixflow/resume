@@ -10,12 +10,12 @@ a {
   text-decoration: none; }
   a:link {
     color: #000; }
-  a:hover {
-    color: #3D9BE3; }
   a:visited {
     color: #000; }
   a:active {
     color: #000; }
+  a:hover {
+    color: #3D9BE3; }
 
 /* header part with personal information*/
 header {
