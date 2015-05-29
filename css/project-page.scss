@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+$sky-blue : #3D9BE3;
+$grey: #9D9E9F;
+$light-grey: #E4E4E4;
+
+$highlight: $sky-blue;
+$normal: #000;
+
+$normal-font-size: 1em;
+
+body {
+	margin: 0 9.6%; /* center the content */
+	max-width: 1200px; 
+
+	font-size: $normal-font-size;
+	font-family: Calibri, "宋体", sans-serif; // en font first
+
+}
+
+h1 {
+	color: $highlight;
+	text-transform: uppercase;
+
+	margin: 1em 0 .2em;
+}
+
+.github {
+	display: inline-block;
+	margin-bottom: .4em;
+}
+
+a {
+	text-decoration: none;
+	
+	$link-normal-color: #000;
+
+	&:link   {color: $link-normal-color}
+	&:visited{color: $link-normal-color}
+	&:active {color: $link-normal-color}
+	&:hover  {color: $sky-blue}
+}
+
+hr {
+	border: 1px dotted $grey;
+	border-style: none none dotted; 
+
+	margin-top: .1em;
+}
+
+p.desc {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+p.other-desc {
+	text-align: center;
+	font-style: italic;
+	color: $grey;
+}

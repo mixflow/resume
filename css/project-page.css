@@ -1,0 +1,42 @@
+@charset "UTF-8";
+body {
+  margin: 0 9.6%;
+  /* center the content */
+  max-width: 1200px;
+  font-size: 1em;
+  font-family: Calibri, "宋体", sans-serif; }
+
+h1 {
+  color: #3D9BE3;
+  text-transform: uppercase;
+  margin: 1em 0 .2em; }
+
+.github {
+  display: inline-block;
+  margin-bottom: .4em; }
+
+a {
+  text-decoration: none; }
+  a:link {
+    color: #000; }
+  a:visited {
+    color: #000; }
+  a:active {
+    color: #000; }
+  a:hover {
+    color: #3D9BE3; }
+
+hr {
+  border: 1px dotted #9D9E9F;
+  border-style: none none dotted;
+  margin-top: .1em; }
+
+p.desc {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%; }
+
+p.other-desc {
+  text-align: center;
+  font-style: italic;
+  color: #9D9E9F; }
