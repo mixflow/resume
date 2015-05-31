@@ -41,6 +41,34 @@ a {
 	&:hover  {color: $sky-blue}
 }
 
+.nav-container {
+	display:none;
+	width: 100%;
+	text-align: center;
+	height: 1em;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	background-color: $highlight;
+
+	nav {
+		
+		$white : #fff;
+		a:link   {color: $white}
+		a:visited{color: $white}
+		a:active {color: $white}
+		a:hover  {color: #000}
+
+
+		.nav-link {
+			margin: 0 5%;
+		}
+	}
+}
+
+
 hr {
 	border: 1px dotted $grey;
 	border-style: none none dotted; 

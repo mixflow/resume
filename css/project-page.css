@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  margin: 0 auto
+  margin: 0 9.6%;
   /* center the content */
   max-width: 1200px;
   font-size: 1em;
@@ -26,6 +26,27 @@ a {
   a:hover {
     color: #3D9BE3; }
 
+.nav-container {
+  display: none;
+  width: 100%;
+  text-align: center;
+  height: 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: #3D9BE3; }
+  .nav-container nav a:link {
+    color: #fff; }
+  .nav-container nav a:visited {
+    color: #fff; }
+  .nav-container nav a:active {
+    color: #fff; }
+  .nav-container nav a:hover {
+    color: #000; }
+  .nav-container nav .nav-link {
+    margin: 0 5%; }
+
 hr {
   border: 1px dotted #9D9E9F;
   border-style: none none dotted;
@@ -40,5 +61,3 @@ p.other-desc {
   text-align: center;
   font-style: italic;
   color: #9D9E9F; }
-
-/*# sourceMappingURL=project-page.css.map */
