@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  margin: 0 9.6%;
+  margin: 0 auto
   /* center the content */
   max-width: 1200px;
   font-size: 1em;
@@ -40,3 +40,5 @@ p.other-desc {
   text-align: center;
   font-style: italic;
   color: #9D9E9F; }
+
+/*# sourceMappingURL=project-page.css.map */
