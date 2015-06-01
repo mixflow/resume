@@ -76,6 +76,11 @@ hr {
 	margin-top: .1em;
 }
 
+h2 {
+	display: inline;
+	margin-right: 3%;
+}
+
 p.desc {
 	margin-left: auto;
 	margin-right: auto;
@@ -86,4 +91,15 @@ p.other-desc {
 	text-align: center;
 	font-style: italic;
 	color: $grey;
+}
+
+
+.img-container{
+	// center the images
+	text-align: center;
+
+	img{
+		max-width: 480px;
+		margin-bottom: 2em;
+	}
 }
